@@ -1,0 +1,26 @@
+{
+  "name": "3d-game-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/Main.js",
+  "scripts": {
+    "build": "npm run clean && npm run dev-build",
+    "dev-build": "./node_modules/.bin/tsc && npm run copy-files",
+    "start": "npx electron ./dist/src/App.js",
+    "copy-files": "cp -r ./src/public ./dist/src",
+    "clean": "rm -rf dist/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron/remote": "^2.0.1",
+    "@types/electron": "^1.6.10",
+    "@types/node": "^16.11.2",
+    "@types/three": "^0.133.1",
+    "electron": "^15.3.0",
+    "three": "^0.133.1"
+  },
+  "dependencies": {
+    "typescript": "^4.4.4"
+  }
+}

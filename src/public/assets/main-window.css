@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    cursor: none;
+    overflow-y: hidden !important;
+    overflow-x: hidden !important; 
+}
+
+/*html {
+    background: #000;
+}*/
